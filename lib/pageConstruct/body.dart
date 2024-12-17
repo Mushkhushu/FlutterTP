@@ -6,11 +6,7 @@ class AppBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xFFB5D4E1), // Fond général derrière le fil
-      padding: const EdgeInsets.all(8.0),
-      child: TweetCardFeed(),
-    );
+    return TweetCardFeed();
   }
 }
 
