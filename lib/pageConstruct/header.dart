@@ -7,6 +7,9 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+        leading: IconButton(
+            onPressed: () {},
+            icon: const ImageIcon(AssetImage("/icons/icons8-canard-80.png"))),
         backgroundColor: const Color(0xFF58B0F0),
         title: Container(
           padding: const EdgeInsets.symmetric(vertical: 50.0),
@@ -19,8 +22,7 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(50.0), // Hauteur du AppNavBar
           child: AppNavBar(),
-        )
-    );
+        ));
   }
 
   @override
