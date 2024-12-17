@@ -10,7 +10,7 @@ class TweetCard extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: const Color(0xFFEDEDF3), // fond du tweet
+        color: const Color(0xFFEDEDF3), // fond du tweetCard
         borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
