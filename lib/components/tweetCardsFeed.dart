@@ -6,9 +6,7 @@ class TweetCardFeed extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: const Color(0xFFB3B3C1), // Fond du feed
-      child: ListView.separated(
+    return ListView.separated(
           itemCount: 10,
           itemBuilder: (context, index) {
             return const TweetCard();
@@ -16,7 +14,6 @@ class TweetCardFeed extends StatelessWidget{
           separatorBuilder: (context, index) {
             return const SizedBox(height: 5);
           },
-        ),
-    );
+        );
   }
 }
