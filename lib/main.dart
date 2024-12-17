@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tp_moi/pageConstruct/content-body.dart';
+import 'package:flutter_tp_moi/pageConstruct/content_body.dart';
 import 'package:flutter_tp_moi/pageConstruct/footer.dart';
 import 'package:flutter_tp_moi/pageConstruct/header.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'WHY',
+      title: 'FoTweeter',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -23,22 +23,19 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class AppPage extends StatelessWidget{
-
+class AppPage extends StatelessWidget {
   const AppPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppHeader(),
-      //body: AppBody(),
-      //: AppFooter()
+        appBar: AppHeader(),
+        body: AppBody(),
+        bottomNavigationBar: AppFooter()
     );
   }
-
-
-
 }
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
