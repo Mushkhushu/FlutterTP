@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tp_moi/pageConstruct/content_body.dart';
+import 'package:flutter_tp_moi/pageConstruct/body.dart';
 import 'package:flutter_tp_moi/pageConstruct/footer.dart';
 import 'package:flutter_tp_moi/pageConstruct/header.dart';
 

@@ -77,23 +77,29 @@ class TweetText extends StatelessWidget {
     return Expanded(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          Text(
+        children: [
+          const Text(
             'Amstramgram@TrucMuche',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16),
           ),
-          Text(
-            '50sec ago',
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.normal,
-                fontSize: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: const [
+              Text(
+                '50sec ago',
+                style: TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 10),
+              ),
+            ],
           ),
-          SizedBox(height: 8),
-          Text(
-              'Ceci est un foTweet avec des mots qui n\'ont aucun sens, les uns à la suite des autres pour essayer de prendre de la place sur l\'écran et de meubler.'),
+          const SizedBox(height: 8),
+          const Text(
+            'Ceci est un foTweet avec des mots qui n\'ont aucun sens, les uns à la suite des autres pour essayer de prendre de la place sur l\'écran et de meubler.',
+          ),
         ],
       ),
     );

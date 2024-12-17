@@ -8,6 +8,7 @@ class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       color: const Color(0xFF58B0F0),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         mainAxisSize: MainAxisSize.min,
         children: const [
           HeaderButton(title: "Nouveau"),
