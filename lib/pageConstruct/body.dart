@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tp_moi/components/inscriptionFrom.dart';
 import 'package:flutter_tp_moi/components/tweetCardsFeed.dart';
 
 class AppBody extends StatelessWidget {
@@ -6,9 +7,17 @@ class AppBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TweetCardFeed();
+    return Column(
+      children: [
+        InscriptionForm(),
+        Expanded(
+          child: TweetCardFeed(),
+        )
+      ],
+    );
   }
 }
+
 
 
 

@@ -11,11 +11,11 @@ class AppNavBar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         mainAxisSize: MainAxisSize.min,
         children: const [
-          HeaderButton(title: "Nouveau"),
-          SizedBox(width: 8),
-          HeaderButton(title: "Accueil"),
-          SizedBox(width: 8),
-          HeaderButton(title: "Rechercher"),
+          IconButton(onPressed: null, icon: Icon(Icons.edit)),
+          SizedBox(width: 20),
+          IconButton(onPressed: null, icon: Icon(Icons.home)),
+          SizedBox(width: 20),
+          IconButton(onPressed: null, icon: Icon(Icons.search))
         ],
       ),
     );

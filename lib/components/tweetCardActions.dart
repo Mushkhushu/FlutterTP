@@ -8,10 +8,9 @@ class CardActions extends StatelessWidget{
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: const [
-        Text('Répondre',
-            style: TextStyle(color: Colors.blue)),
-        Text('Retweet', style: TextStyle(color: Colors.blue)),
-        Text('Favoris', style: TextStyle(color: Colors.blue)),
+        IconButton(onPressed: null, icon: Icon(Icons.reply)),
+        IconButton(onPressed: null, icon: Icon(Icons.forward)),
+        IconButton(onPressed: null, icon: Icon(Icons.star)),
       ],
     );
   }

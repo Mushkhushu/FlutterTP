@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tp_moi/components/tweetCard.dart';
 
 class TweetCardFeed extends StatelessWidget{
+
   TweetCardFeed({super.key});
+
   final List<TweetCard> tweets = [
     TweetCard(authorName: "Mojotito",
         tweetText: "Aliquam tincidunt efficitur lectus, in pretium dui scelerisque vel. Praesent tempor urna orci, sit amet feugiat arcu luctus sed. Nullam in eleifend augue. Donec rutrum enim vitae scelerisque bibendum. Ut mollis augue nulla, non interdum libero varius ut. Curabitur at euismod nunc. Pellentesque sed massa eleifend, bibendum dolor faucibus, porttitor nulla. Donec a fermentum velit. Vestibulum mi ante, lobortis ac interdum ac, tincidunt id odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam aliquam fringilla ornare. Donec bibendum lorem vel justo porta pretium. Curabitur sit amet velit magna. Nullam sed tincidunt dolor, eu eleifend nisl. Curabitur ultricies id ex nec rhoncus.",
