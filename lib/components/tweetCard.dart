@@ -4,7 +4,19 @@ import 'package:flutter_tp_moi/components/tweetCardActions.dart';
 import 'package:flutter_tp_moi/components/tweetCardImage.dart';
 
 class TweetCard extends StatelessWidget{
-  const TweetCard({super.key});
+
+final String authorName;
+final String tweetText;
+final String imageURL;
+final String postTime;
+
+  const TweetCard({
+    required this.authorName,
+    required this.tweetText,
+    required this.imageURL,
+    required this.postTime,
+    super.key
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +33,9 @@ class TweetCard extends StatelessWidget{
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TweetImage(),
+                TweetImage(imageURL: imageURL),
                 const SizedBox(width: 16),
-                TweetText(),
+                TweetText(authorName: authorName,postTime: postTime, tweetText: tweetText,),
               ],
             ),
             const SizedBox(height: 16),
